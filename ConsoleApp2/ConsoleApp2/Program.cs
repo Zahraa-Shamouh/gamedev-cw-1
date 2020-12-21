@@ -15,14 +15,19 @@ namespace ConsoleApp2
             string HeroName = "Ryu";
             float HeroHeight = 1.80f;
             int HeroAge = 18;
-            string HeroSuperPower1 = "Night Vision";
-            string HeroSuperPower2 = "Steel Shiled";
+            string HeroSuperPower1 = "Steel Shiled";
+            string HeroSuperPower2 = "Night Vision";
 
             Console.WriteLine("My name is {0}, my super powers are {1} and {2}. my age is {3} and my speed is {4}", characterName, SuperPower1, SuperPower2, Age, speed);
             Console.WriteLine("My name is {0}, my super powers are {1} and {2}. my age is {3} and my hight is {4}", HeroName, HeroSuperPower1, HeroSuperPower2, HeroAge, HeroHeight);
             int AgeDifference = HeroAge - Age;
             Console.WriteLine ("The Age difference is {0}", AgeDifference);
 
+
+            if (SuperPower1 == HeroSuperPower1)
+            {
+                Console.WriteLine("{0} and {1} has the same super power", characterName, HeroName);
+            }
         }
     }
 }
